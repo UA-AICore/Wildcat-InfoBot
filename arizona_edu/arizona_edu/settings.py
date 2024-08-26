@@ -91,3 +91,11 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+# Ming's additional setting
+# -----------------------------------
+DOWNLOAD_TIMEOUT = 30
+RETRY_TIMES = 3
+CONCURRENT_REQUESTS = 8
+DOWNLOAD_FAIL_ON_DATALOSS = False
+# -----------------------------------

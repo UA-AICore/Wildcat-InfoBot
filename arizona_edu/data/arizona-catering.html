@@ -1,0 +1,479 @@
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/catering/template/scroll-functions.js"></script>
+        <script src="/catering/lib/wallop/Wallop.min.js"></script>
+        <script src="/catering/template/cardsadjuster.js" type="text/javascript" />
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132122543-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132122543-2');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Arizona Catering Company</title>
+
+    
+	    <link rel="StyleSheet" href="/catering/css/catering-style.css" type="text/css" media="screen" />
+        <link rel="StyleSheet" href="/catering/css/filter-page-style.css" type="text/css" media="screen" />
+        <link rel="StyleSheet" href="/catering/css/filter-cards-style-fixed-landing.css" type="text/css" media="screen" />
+    
+    
+    
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="/template/common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/template/common/css/mdb.min.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+	</style>
+</head>
+
+	<body >
+
+		<!-- Vue -->
+		<script type="text/javascript" src="/node_modules/vue/dist/vue.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/template/common/css/global.css">
+<link rel="stylesheet" type="text/css" href="/template/common/css/global.mobile.css">
+<link rel="stylesheet" type="text/css" href="/template/layout/header/css/style.css">
+<link rel="stylesheet" type="text/css" href="/template/layout/header/css/megamenu.css">
+<link rel="stylesheet" type="text/css" href="/template/layout/header/css/nav.mobile.css">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+<script>
+    const dining = {"districts":{"title":"Dining By District","url":"","target":"","list":[{"title":"Historic District","url":"\/dining\/dining-by-district\/historic\/","target":"","child":[{"title":"Arizona Market","target":"","url":"\/dining\/dining-by-district\/historic\/#Arizona Market"},{"title":"Cactus Grill","target":"","url":"\/dining\/dining-by-district\/historic\/#Cactus Grill"},{"title":"Chick-fil-A","target":"","url":"\/dining\/dining-by-district\/historic\/#Chick-fil-A"},{"title":"Core","target":"","url":"\/dining\/dining-by-district\/historic\/#Core"},{"title":"Cork & Craft","target":"","url":"\/dining\/dining-by-district\/historic\/#Cork & Craft"},{"title":"Einstein Bros Bagels","target":"","url":"\/dining\/dining-by-district\/historic\/#Einstein Bros Bagels"},{"title":"IQ Fresh","target":"","url":"\/dining\/dining-by-district\/historic\/#IQ Fresh"},{"title":"N<sup>RICH<\/sup> Urban Market","target":"","url":"\/dining\/dining-by-district\/historic\/#N<sup>RICH<\/sup> Urban Market"},{"title":"On Deck Deli","target":"","url":"\/dining\/dining-by-district\/historic\/#On Deck Deli"},{"title":"Panda Express","target":"","url":"\/dining\/dining-by-district\/historic\/#Panda Express"},{"title":"Papa John's Pizza","target":"","url":"\/dining\/dining-by-district\/historic\/#Papa John's Pizza"},{"title":"Radicchio","target":"","url":"\/dining\/dining-by-district\/historic\/#Radicchio"},{"title":"Sabor","target":"","url":"\/dining\/dining-by-district\/historic\/#Sabor"},{"title":"Saffron Bites @SUMC","target":"","url":"\/dining\/dining-by-district\/historic\/#Saffron Bites @SUMC"},{"title":"Scented Leaf","target":"","url":"\/dining\/dining-by-district\/historic\/#Scented Leaf"},{"title":"Starbucks @ Bookstore","target":"","url":"\/dining\/dining-by-district\/historic\/#Starbucks @ Bookstore"},{"title":"Sushi with Gusto","target":"","url":"\/dining\/dining-by-district\/historic\/#Sushi with Gusto"}]},{"title":"Park\/Global District","url":"\/dining\/dining-by-district\/park-global\/","target":"","child":[{"title":"Core+","target":"","url":"\/dining\/dining-by-district\/park-global\/#Core+"},{"title":"Global Market","target":"","url":"\/dining\/dining-by-district\/park-global\/#Global Market"},{"title":"Mas Tacos","target":"","url":"\/dining\/dining-by-district\/park-global\/#Mas Tacos"},{"title":"N<sup>RICH<\/sup> Urban Market Express","target":"","url":"\/dining\/dining-by-district\/park-global\/#N<sup>RICH<\/sup> Urban Market Express"},{"title":"Sichuan Kitchen","target":"","url":"\/dining\/dining-by-district\/park-global\/#Sichuan Kitchen"},{"title":"Starbucks @ Global","target":"","url":"\/dining\/dining-by-district\/park-global\/#Starbucks @ Global"},{"title":"The Den","target":"","url":"\/dining\/dining-by-district\/park-global\/#The Den"}]},{"title":"Highland District","url":"\/dining\/dining-by-district\/highland\/","target":"","child":[{"title":"Highland Grocery","target":"","url":"\/dining\/dining-by-district\/highland\/#Highland Grocery"},{"title":"Red & Blue Vending Market","target":"","url":"\/dining\/dining-by-district\/highland\/#Red & Blue Vending Market"},{"title":"Shake Smart @ Campus Rec","target":"","url":"\/dining\/dining-by-district\/highland\/#Shake Smart @ Campus Rec"},{"title":"Slot Canyon C\u00e1fe","target":"","url":"\/dining\/dining-by-district\/highland\/#Slot Canyon C\u00e1fe"},{"title":"Starbucks @ Library","target":"","url":"\/dining\/dining-by-district\/highland\/#Starbucks @ Library"}]},{"title":"North District","url":"\/dining\/dining-by-district\/north\/","target":"","child":[{"title":"'85 North","target":"","url":"\/dining\/dining-by-district\/north\/#'85 North"},{"title":"Cafe Bolo","target":"","url":"\/dining\/dining-by-district\/north\/#Cafe Bolo"},{"title":"Catalyst Caf\u00e9","target":"","url":"\/dining\/dining-by-district\/north\/#Catalyst Caf\u00e9"},{"title":"Ike's Coffee and Marketplace","target":"","url":"\/dining\/dining-by-district\/north\/#Ike's Coffee and Marketplace"},{"title":"Shake Smart @ North Rec","target":"","url":"\/dining\/dining-by-district\/north\/#Shake Smart @ North Rec"}]}]},"other":{"title":"Other","url":"","target":"","list":[{"title":"Meal Plans","url":"\/mealplans\/","target":""},{"title":"Express Catering","url":"\/catering\/express\/","target":""},{"title":"Technology","url":"\/dining\/dining-technology\/","target":""},{"title":"In the News","url":"\/dining\/news\/","target":""},{"title":"Awards","url":"\/dining\/awards\/","target":""},{"title":"Sustainability","url":"\/dining\/sustainability\/","target":""},{"title":"Contact Us","url":"\/dining\/contact-us\/","target":""},{"title":"About Us","url":"\/dining\/about-us\/","target":""},{"title":"Hours","url":"\/infodesk\/hours\/","target":""}]},"technology":{"title":"Dining Technology","url":"\/dining\/dining-technology\/","target":"","list":[{"title":"Grubhub Rovers","url":"\/dining\/dining-technology\/rovers\/","target":""},{"title":"Grubhub Locker and Window Pick Up","url":"\/dining\/dining-technology\/","target":""},{"title":"Smart Vending","url":"\/dining\/dining-technology\/","target":""},{"title":"On the Road","url":"\/dining\/dining-technology\/","target":""}]},"awards":{"title":"Awards","url":"\/dining\/awards\/","target":"","list":[]},"sustainability":{"title":"Sustainability","url":"\/dining\/sustainability\/","target":"","list":[{"title":"Packaging","url":"\/dining\/sustainability\/","target":""},{"title":"Composting","url":"\/dining\/sustainability\/","target":""},{"title":"Special Events","url":"\/dining\/sustainability\/","target":""}]},"mealplans":{"title":"Meal Plans","url":"\/mealplans\/","target":"","list":[]},"expresscatering":{"title":"Express Catering","url":"\/catering\/express\/","target":"","list":[]},"aboutus":{"title":"About Us","url":"\/dining\/about-us\/","target":"","list":[]},"hours":{"title":"Hours","url":"\/infodesk\/hours\/","target":"","list":[]},"contactus":{"title":"Contact Us","url":"\/mealplans\/contactus\/","target":"","list":[]},"nutrition":{"title":"Nutrition","url":"http:\/\/nutrition.union.arizona.edu\/","target":"_blank","list":[{"title":"Dietary Needs","url":"http:\/\/nutrition.union.arizona.edu\/dietary-needs","target":"_blank"},{"title":"Nutrition Calculator","url":"http:\/\/nutrition.union.arizona.edu\/nutrition-calculator","target":"_blank"},{"title":"Nutrition Programs","url":"http:\/\/nutrition.union.arizona.edu\/programs","target":"_blank"}]}};
+    const restaurants = {"sumc":{"title":"Student Union Memorial Center","url":"\/dining\/sumc","target":"","list":[{"title":"Arizona Market","url":"\/dining\/sumc\/arizonamarket","target":""},{"title":"Cactus Grill","url":"\/dining\/sumc\/cactus","target":""},{"title":"Chick-Fil-A","url":"\/dining\/sumc\/chickfila","target":""},{"title":"Core","url":"\/dining\/sumc\/core","target":""},{"title":"Einstein Bros. Bagels","url":"\/dining\/sumc\/einsteins","target":""},{"title":"IQ Fresh","url":"\/dining\/sumc\/iq","target":""},{"title":"Nrich Urban Market","url":"\/dining\/sumc\/nrich","target":""},{"title":"On Deck Deli","url":"\/dining\/sumc\/ondeck","target":""},{"title":"Panda Express","url":"\/dining\/sumc\/panda","target":""},{"title":"Papa John's Pizza","url":"\/dining\/sumc\/papajohns","target":""},{"title":"Radicchio","url":"\/dining\/sumc\/radicchio","target":""},{"title":"Sabor Mexican Fare","url":"\/dining\/sumc\/sabor","target":""},{"title":"Saffron Bites","url":"\/dining\/sumc\/bites","target":""},{"title":"Starbucks Bookstore","url":"\/dining\/sumc\/starbucks","target":""},{"title":"The Scoop","url":"\/dining\/sumc\/scoop","target":""}]},"psu":{"title":"Global Center","url":"\/dining\/psu","target":"","list":[{"title":"Core+","url":"\/dining\/psu\/corepsu\/","target":""},{"title":"Global Market","url":"\/dining\/psu\/globalmarket\/","target":""},{"title":"Mas Tacos","url":"\/dining\/psu\/mastacos\/","target":""},{"title":"Nrich Urban Market Express","url":"\/dining\/psu\/nrichexpress\/","target":""},{"title":"Saffron Bites","url":"\/dining\/psu\/saffronbites\/","target":""},{"title":"Sichuan Kitchen","url":"\/dining\/psu\/sichuan\/","target":""},{"title":"Starbucks Global","url":"\/dining\/psu\/starbucks","target":""},{"title":"The Den","url":"\/dining\/psu\/theden\/","target":""}]},"other":{"title":"Other Locations","url":"\/dining\/other","target":"","list":[{"title":"85 North","url":"\/dining\/other\/85north","target":""},{"title":"Catalyst Caf&#xE9;","url":"\/dining\/other\/catalyst","target":""},{"title":"Highland Market","url":"\/dining\/other\/highland","target":""},{"title":"Ike's Coffee & Marketplace","url":"\/dining\/other\/ike","target":""},{"title":"Red & Blue Market","url":"\/dining\/other\/redandblue","target":""},{"title":"Shake Smart @ Campus Rec","url":"\/dining\/other\/shakesmart","target":""},{"title":"Shake Smart @ North Rec","url":"\/dining\/other\/shakesmartnorth","target":""},{"title":"Slot Canyon Caf&#xE9;","url":"\/dining\/other\/slotcanyon","target":""},{"title":"Starbucks Library","url":"\/dining\/other\/starbuckslib","target":""}]},"nutrition":{"title":"Nutrition","url":"http:\/\/nutrition.union.arizona.edu\/","target":"","list":[{"title":"Programs","url":"http:\/\/nutrition.union.arizona.edu\/programs","target":""},{"title":"Dietary Needs","url":"http:\/\/nutrition.union.arizona.edu\/dietary-needs","target":""},{"title":"Nutrition Calculator","url":"http:\/\/nutrition.union.arizona.edu\/nutrition-calculator","target":""},{"title":"Blog","url":"http:\/\/nutrition.union.arizona.edu\/blog","target":""},{"title":"Events","url":"http:\/\/nutrition.union.arizona.edu\/events","target":""}]}};
+    const mealplan = {"login":{"target":"","list":[]},"get":{"title":"Meal Plans","url":"https:\/\/mealplans.arizona.edu\/","target":"","list":[{"title":"My Account","url":"https:\/\/mealplans.arizona.edu\/viewaccount.php","target":""},{"title":"Guest Login","url":"https:\/\/mealplans.arizona.edu\/login.php?type=UAGuest","target":""},{"title":"Intro to Meal Plans","url":"https:\/\/mealplans.arizona.edu\/","target":""},{"title":"Swipe Plans","url":"https:\/\/mealplans.arizona.edu\/swipes\/","target":""},{"title":"Debit Plans","url":"https:\/\/mealplans.arizona.edu\/debit\/","target":""},{"title":"Plan Change Requests","url":"https:\/\/mealplans.arizona.edu\/requestform","target":""},{"title":"Faculty & Staff Plans","url":"https:\/\/mealplans.arizona.edu\/faculty-staff","target":""},{"title":"Visitor\/Guest Plans","url":"https:\/\/mealplans.arizona.edu\/guest","target":""},{"title":"FAQ","url":"https:\/\/mealplans.arizona.edu\/faqs","target":""}]},"swipe":{"title":"CatCa$h","url":"","target":"","list":[{"title":"My Account","url":"https:\/\/catcash.arizona.edu\/transactions","target":""},{"title":"Guest Login","url":"https:\/\/catcash.arizona.edu\/login.php?type=UAGuest","target":""},{"title":"Intro to CatCa$h","url":"https:\/\/catcash.arizona.edu\/","target":""},{"title":"FAQ","url":"https:\/\/catcash.arizona.edu\/faqs\/","target":""},{"title":"Terms & Conditions","url":"https:\/\/catcash.arizona.edu\/how-it-works\/","target":""},{"title":"Contact","url":"https:\/\/catcash.arizona.edu\/contact\/","target":""}]},"honor":{"target":"","list":[]}};
+    const catering = {"plan_form":{"title":"Catering","url":"\/catering\/","target":"","list":[{"title":"Catering Menus","url":"\/catering\/menus","target":""},{"title":"Express Catering","url":"\/catering\/express\/index.php","target":""},{"title":"Beverage Options","url":"\/catering\/beverage-options","target":""},{"title":"Catering Waiver","url":"\/catering\/catering_waiver.php","target":"_blank"}]},"arizona_catering":{"title":"Meetings and Events","url":"\/meetingandevents\/","target":"_blank","list":[{"title":"Conference Services","url":"\/meetingandevents\/conferenceservices.php","target":""},{"title":"Campus Use & Scheduling","url":"\/meetingandevents\/campususeandscheduling.php","target":""},{"title":"Request Proposal","url":"\/catering\/request\/event\/","target":""}]},"ordering":{"title":"About Us","url":"\/catering\/contact_us.php","target":"","list":[{"title":"Contact US","url":"\/catering\/contact_us.php","target":""},{"title":"Meet the Team","url":"\/catering\/team","target":"_blank"}]},"guidelines":{"title":"Request Proposal","url":"\/catering\/request\/event\/","target":"","list":[]},"contact":{"title":"Request Proposal","url":"\/catering\/request\/event\/","target":"","list":[]}};
+    const involvement = {"involvement":{"title":"Services","url":"\/involvement\/","target":"","list":[{"title":"Gallagher Theater","url":"\/involvement\/gallagher\/","target":"","child_id":"gallagher","child":[{"title":"Booking Gallagher","url":"\/involvement\/gallagher\/booking.php","target":""}]},{"title":"Arizona Esports Arena","url":"\/involvement\/arizonaesportsarena\/index.php","target":"","child_id":""},{"title":"CatCard Office","url":"https:\/\/catcard.arizona.edu\/","target":"_blank","child_id":""},{"title":"CatCa&dollar;h","url":"https:\/\/catcash.arizona.edu\/","target":"_blank","child_id":"catcash","child":[{"title":"Catprints","url":"https:\/\/catcash.arizona.edu\/catprints.php","target":""},{"title":"Login\/Deposits","url":"\/catcash\/index.php","target":""}]},{"title":"Fast Copy","url":"http:\/\/union.arizona.edu\/fastcopy\/","target":"_blank","child_id":""}]},"involvement2":{"title":"","url":"","target":"","list":[{"title":"Digital Ad Platforms","url":"\/involvement\/digitalads\/","target":"","child_id":""},{"title":"Events","url":"\/rooms\/event_types.php","target":"","child_id":"","child":[{"title":"Types of Events","url":"\/rooms\/event_types.php","target":""},{"title":"Special Events Policies","url":"\/rooms\/catering_policies.php","target":""},{"title":"Conference Services","url":"\/rooms\/services.php","target":""},{"title":"Equipment Rental Pricing","url":"\/rooms\/audiovisual.php","target":""},{"title":"Banner Hanging","url":"\/rooms\/banner_policies.php","target":""}]},{"title":"Reserve a Room","url":"\/rooms\/reserving.php","target":"","child_id":"","child":[{"title":"Reservation Form","url":"\/catering\/request\/event\/","target":""},{"title":"Reservation Procedures","url":"\/rooms\/procedures.php","target":""},{"title":"S.M.A.R.T. Plan","url":"\/catering\/resources\/Arizona_Catering_S.M.A.R.T_POP.pdf","target":"_blank"},{"title":"Room Use Policies","url":"\/rooms\/policies.php","target":""},{"title":"Student Clubs and Organizations","url":"\/rooms\/procedures_studentorg.php","target":""},{"title":"Cancellation\/No-Show Policy","url":"\/rooms\/procedures.php#cancellation","target":""},{"title":"Non-University Groups","url":"\/rooms\/procedures_other.php","target":""}]},{"title":"Reserve UA Campus Areas","url":"\/mall\/","target":"","child_id":"","child":[{"title":"Available Space Maps","url":"\/mall\/maps.php","target":""},{"title":"Campus Use Activity Request Form","url":"\/mall\/request_form.php","target":""},{"title":"Campus Use\/Mall Activity Fees","url":"\/mall\/template\/resources\/SUMallFees.pdf","target":"_blank"},{"title":"DRC Guidelines","url":"https:\/\/drc.arizona.edu\/planning-events","target":"_blank"},{"title":"Important Information","url":"\/mall\/info.php","target":""},{"title":"Mall Guidelines","url":"\/mall\/guidelines.php","target":""},{"title":"Unapproved Mall Vendors","url":"\/mall\/unapprovedvendors.php","target":""}]},{"title":"Banner Hanging","url":"\/rooms\/banner_policies.php","target":"","no_left":true,"child_id":""},{"title":"Union Policies","url":"\/operations\/policies\/index.php","target":"","child_id":"","child":[{"title":"Banner Hanging Policy","url":"\/rooms\/banner_policies.php","target":""},{"title":"Computer Lab Policy","url":"https:\/\/oscr.arizona.edu\/","target":"_blank"},{"title":"Conflict of Interest Policy","url":"\/operations\/policies\/conflictofinterest.php","target":""},{"title":"Dance Policy","url":"\/operations\/policies\/dances.php","target":""},{"title":"Dock Access Policy","url":"\/operations\/policies\/dockaccess.php","target":""},{"title":"Flyers & Bulletin Boards Policy","url":"\/operations\/policies\/bulletinboards.php","target":""},{"title":"Keyless Access Policy","url":"\/operations\/policies\/keylessaccess.php","target":""},{"title":"Loitering & Solicitation Policy","url":"\/operations\/policies\/loitering.php","target":""},{"title":"Lost & Found Policy","url":"\/operations\/policies\/lostandfound.php","target":""},{"title":"Smoking Policy","url":"\/operations\/policies\/smoking.php","target":""},{"title":"Space Occupancy Policy","url":"\/operations\/policies\/spaceoccupancy.php","target":""},{"title":"Facility Checklist","url":"\/operations\/policies\/template\/resources\/facchecklist.pdf","target":"_blank"},{"title":"UA Catering Waiver","url":"\/catering\/resources\/CateringWaiver.pdf","target":"_blank"}]},{"title":"AZ Primary Eye Care Center","url":"http:\/\/arizonaprimaryeyecare.com\/locations\/ua","target":"_blank","child_id":""}]},"other":{"title":"Involvement","url":"","target":"","list":[{"title":"ASUA","url":"https:\/\/asuatoday.arizona.edu\/","target":"_blank","child_id":""},{"title":"BookStores","url":"https:\/\/shop.arizona.edu","target":"_blank","child_id":""},{"title":"Family Weekend","url":"https:\/\/familyweekend.arizona.edu\/","target":"_blank","child_id":""},{"title":"Fraternity and Sorority Programs","url":"https:\/\/greek.arizona.edu\/welcome-fraternity-sorority-programs","target":"_blank","child_id":""},{"title":"GPSC","url":"http:\/\/www.gpsc.arizona.edu\/","target":"_blank","child_id":""},{"title":"Leadership Program","url":"http:\/\/leadership.arizona.edu\/","target":"_blank","child_id":""},{"title":"LGBTQ","url":"https:\/\/lgbtq.arizona.edu\/","target":"_blank","child_id":""}]},"other2":{"title":"","list":[{"title":"Transfer Student Center","url":"https:\/\/transfercenter.arizona.edu","target":"_blank","child_id":""},{"title":"VETS Student Center","url":"https:\/\/vets.arizona.edu","target":"_blank","child_id":""},{"title":"Wildcat Event Board","url":"https:\/\/www.uawildcateventsboard.com\/","target":"_blank","child_id":"eventboard","child":[{"title":"About Us","url":"\/involvement\/activities\/about.php","target":""},{"title":"Committees","url":"\/involvement\/activities\/committees.php","target":""}]},{"title":"Women & Gender Resource Center","url":"https:\/\/wrc.arizona.edu\/","target":"_blank","child_id":""}]}};
+    const about = {"about":{"title":"About Student Unions","url":"\/about\/","target":"","list":[{"title":"About Us","url":"\/about\/","target":""},{"title":"Staff Directory","url":"\/about\/directory\/","target":""},{"title":"Executive Leadership Team","url":"\/about\/executive-team\/","target":"","child_id":"executive-members","child":[{"title":"Christine Carlson","url":"\/about\/executive-team\/christine-carlson","target":""},{"title":"Chelsea Ewer","url":"\/about\/executive-team\/chelsea-ewer","target":""},{"title":"Lupita Hollis","url":"\/about\/executive-team\/lupita-hollis","target":""},{"title":"Mari John","url":"\/about\/executive-team\/mari-john","target":""},{"title":"Todd Millay","url":"\/about\/executive-team\/todd-millay","target":""},{"title":"Michael Omo","url":"\/about\/executive-team\/michael-omo","target":""},{"title":"Rachelle Stone","url":"\/about\/executive-team\/rachelle-stone","target":""}]}]},"about2":{"title":"","url":"","target":"","list":[{"title":"Maps and Rooms","url":"\/infodesk\/maps\/index.php","target":""},{"title":"U.S.S Arizona Bell","url":"\/about\/uss_arizona_bell.php","target":""},{"title":"Employment","url":"\/employment\/","target":"","child_id":"student_job","child":[{"title":"Full-time Employment","url":"\/employment\/fulltime.php","target":""},{"title":"Student Employment","url":"\/employment\/student.php","target":""}]},{"title":"Contact","url":"\/infodesk\/index.php","target":""}]},"about3":{"title":"Union Hours","url":"\/infodesk\/hours\/","target":"","list":[{"title":"Location","url":"\/infodesk\/hours\/index.php?cat=all","target":"","child_id":"union_hour_location","child":[{"title":"SUMC","url":"\/infodesk\/hours\/index.php?cat=sumc","target":""},{"title":"Global Center","url":"\/infodesk\/hours\/index.php?cat=psu","target":""},{"title":"Union Outlets","url":"\/infodesk\/hours\/index.php?cat=ufs","target":""}]},{"title":"Category","url":"\/infodesk\/hours\/index.php?cat=all","target":"","child_id":"union_hour_category","child":[{"title":"Dining","url":"\/infodesk\/hours\/index.php?cat=dining","target":""},{"title":"Administrative","url":"\/infodesk\/hours\/index.php?cat=admin","target":""},{"title":"Retail & Services","url":"\/infodesk\/hours\/index.php?cat=services","target":""}]}]},"announcement":{"title":"Announcement","url":"","target":"","list":[{"title":"Coronavirus","url":"\/coronavirus\/index.php","target":""}]}};
+</script>
+<!-- <script type="text/javascript" src="/template/layout/header/routes/mealplan.js"></script> -->
+<!-- <script type="text/javascript" src="/template/layout/header/routes/cateringevent.js"></script> -->
+<!-- <script type="text/javascript" src="/template/layout/header/routes/involvement.json"></script> -->
+<!-- <script type="text/javascript" src="/template/layout/header/routes/about.js"></script> -->
+<!-- <style>
+    .corona-box {
+        
+    }
+    .corona-box a {
+        display: block;
+        width: 100%;
+        height: 250px;
+        line-height: 250px;
+        font-size: 50px;
+        color: #fff !important;
+        text-align: center;
+        background-color: #2e5c8e;
+    }
+    .corona-box a:hover {
+        background-color: #4d6d90;
+    }
+</style>
+
+<div class="container mt-5 mb-5" style="padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-12 mb-3" style="color: #ac051f; text-align: center; font-size: 45px; font-weight: 500;">Message</div>
+        <div class="col-md-6 corona-box"><a>For Students</a></div>
+        <div class="col-md-6 corona-box"><a>For Parents</a></div>
+    </div>
+</div> -->
+
+<section id="su_header" style="display: unset">
+	<su-red-banner></su-red-banner>
+<!--Sub BAnner Message-->
+<div style="padding: 20px; border: 0; background-color: #E2E9EB;">
+    <div class="row">
+        <div class="col-md-12 corona-box" style="text-align: center; font-size: 24px;">Reserve your pass for Cork & Craft's Tailgate VIP Events! <a href="https://forms.gle/E95bgCpqD9cPzUuY9" style="color: #ac051f !important;">Reserve Here</a></div>
+    </div>
+</div>
+
+	<su-header>
+		<su-navigation>
+			<su-mega-dropdown
+			id="dining"
+			name="Arizona Dining"
+			url="/dining/"
+			>
+						<div class="col-6"> 
+							<!--<su-mega-dropdown-li v-bind:data="dining.districts" child-display="hover" hover-mode="flyout">-->
+							<su-mega-dropdown-li-flyout :data="dining.districts">
+							</su-mega-dropdown-li-flyout> 
+						</div>
+               			<div class="col-3"> <su-mega-dropdown-li v-bind:data="dining.nutrition" child-display="hover"> </div>
+                		<div class="col-3"> <su-mega-dropdown-li v-bind:data="dining.other" ></div>
+
+			</su-mega-dropdown>
+
+			<su-mega-dropdown
+			id="mealplan"
+			name="meal plans"
+			url="https://mealplans.arizona.edu"
+			>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="mealplan.login" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="mealplan.get" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="mealplan.swipe" > </div>
+				<div class="col-3"> 
+					<span><su-mega-dropdown-li v-bind:data="mealplan.honor" /></span>
+					<span><su-mega-dropdown-li v-bind:data="mealplan.flyer" /></span>
+				</div>
+			</su-mega-dropdown>
+
+			<su-mega-dropdown
+			id="catering"
+			name="Catering & Events"
+			url="/catering/events/"
+			>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="catering.plan_form" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="catering.arizona_catering" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="catering.ordering" > </div>
+				<div class="col-3"> 
+					<!-- <span><su-mega-dropdown-li v-bind:data="catering.guidelines" /></span> -->
+					<span><su-mega-dropdown-li v-bind:data="catering.contact" /></span>
+				</div>
+			</su-mega-dropdown>
+
+			<su-mega-dropdown
+			id="involvement"
+			name="Involvement & Services"
+			url="/involvement/"
+			>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="involvement.involvement" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="involvement.involvement2" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="involvement.other" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="involvement.other2" > </div>
+			</su-mega-dropdown>
+
+			<su-mega-dropdown
+			id="about"
+			name="About Unions"
+			url="/about/"
+			>
+				<div class="col-3"> </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="about.about" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="about.about2" > </div>
+				<div class="col-3"> <su-mega-dropdown-li v-bind:data="about.about3" > </div>
+			</su-mega-dropdown>
+
+
+		</su-navigation>
+		<su-mobile-navigation>
+
+			<su-mobile-nav-li
+			title="Restaurants"
+			id="restaurant"
+			selected="none"
+			v-bind:data="restaurants"
+			></su-mobile-nav-li>
+
+			<su-mobile-nav-li
+			title="Meal Plans"
+			id="mealplans"
+			selected="none"
+			v-bind:data="mealplan"
+			></su-mobile-nav-li>
+
+			<su-mobile-nav-li
+			title="Involvements"
+			id="involvement"
+			selected="none"
+			v-bind:data="involvement"
+			></su-mobile-nav-li>
+
+			<su-mobile-nav-li
+			title="About"
+			id="about"
+			selected="none"
+			v-bind:data="about"
+			></su-mobile-nav-li>
+
+		</su-mobile-navigation>
+	</su-header>
+</section>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/4ce7d659c29ce1bc3165a4b13/6166e9635b5962072975bd3e8.js");</script>
+<script type="text/javascript" src="/template/layout/helper.js"></script>
+<script type="text/javascript" src="/template/layout/header/su-mobile-navigation.component.js"></script>
+<script type="text/javascript" src="/template/layout/header/su-navigation.component.js"></script>
+<script type="text/javascript" src="/template/layout/header/su-red-banner.component.js"></script>
+<script type="text/javascript" src="/template/layout/header/su-header.component.js"></script>
+		<div class="container su-main-content">
+			<div class="row">
+	<style>
+		.wrap-left-col-menu > ul > li > ul > li > a:before {
+			content: '' !important;
+			padding: 0 0 10px 1rem;
+		}
+	</style>
+    <link rel="stylesheet" type="text/css" href="/catering/catering_main_style.css">
+    <!-- Latest icon font stylesheet -->
+    <link rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/ua-brand-icons/v2.0.1/ua-brand-icons.min.css">
+
+    <!-- Compiled and minified UA Bootstrap CSS, icon font not included -->
+    <link rel="stylesheet" href="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.30/ua-bootstrap.min.css">
+
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a name="top"></a>
+    <div class="col-12 page-img-banner wrap-banner-img "  style="margin-bottom:0;">
+        <img src="/catering/images/Header image 1 with logo.jpg"
+		alt="Catering Header Image" 
+		class="catering-header-image" />
+    </div>
+</div>
+<div id="cateringContent" class="row page-top-wide">
+    <!-- Godawful banner notifying users of updated menu pricing -->
+    
+    <!-- Left Col -->
+            <div class="col wrap-left-col"  >
+            <div id="left-col" class="wrap-left-col-menu">
+                <h2 class="left-col-menu-header"><a href="/catering/events">Catering And Events</a></h2><ul><li class="wrap-left-nav-child "><a href="/catering/">Catering<i class="fas fa-caret-down"></i></a><ul class=" "><li class=""><a href="/catering/menus">Catering Menus</a></li><li class=""><a href="/catering/express/index.php">Express Catering</a></li><li class=""><a href="/catering/beverage-options">Beverage Options</a></li><li class=""><a href="/catering/catering_waiver.php"target="_blank">Catering Waiver</a></li></ul></li><li class="wrap-left-nav-child "><a href="/meetingandevents/"target="_blank">Meetings and Events<i class="fas fa-caret-down"></i></a><ul class=" "><li class=""><a href="/meetingandevents/conferenceservices.php">Conference Services</a></li><li class=""><a href="/meetingandevents/campususeandscheduling.php">Campus Use & Scheduling</a></li><li class=""><a href="/meetingandevents/rentalpolicies.php">Rental Policies</a></li><li class=""><a href="/meetingandevents/equipmentrental.php">Equipment Rental Pricing</a></li><li class=""><a href="/meetingandevents/bannerhangingpolicies.php">Banner Hanging Policies</a></li></ul></li><li class=""><a href="/catering/contact_us.php">Contact Us</a></li><li class=""><a href="/catering/team">Meet The Team</a></li></ul>                <!-- catering-specific buttons -->
+                <a class="bg-blue rounded m-1 py-2 px-1 d-block text-light text-center" href="/catering/request/event/">Request for Proposal</a>
+                <a class="bg-blue rounded m-1 py-2 px-1 d-block text-light text-center" href="/catering/request/cork-and-craft/">Cork and Craft Event Request</a>
+            </div>
+        </div>
+    	<!-- catering-wide leftnav buttons -->
+
+
+    <div  class="col-sm-12 col-md-9 col-lg-9 top-banner-column">
+	<!--<div id="left-col" class="wrap-left-col-menu">
+			test
+			</div>-->
+        		
+
+    <style type="text/css" >
+	.center-list li {
+		margin-top: 1.5em !important;
+	}	
+	.center-list a:active, .center-list a:link, .center-list a:visited {
+		color: #444444 !important;
+		font-weight: bold !important;
+	}
+	.center-list a:hover {
+		color: #CC0033 !important;
+		font-weight: bold !important;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="catering_main_style.css">
+<link rel="stylesheet" type="text/css" href="lib/wallop/wallop.css">
+<link rel="stylesheet" type="text/css" href="lib/wallop/wallop--fade.css">
+
+<h1 class="section-header-title" style="margin-bottom: 0 !important; margin-top: 1rem !important;">Catering and Events</h1>
+<p style="margin-bottom: 1rem;">Creating memories that last a lifetime through extraordinary customer service and delicious menu offerings is 
+our mission. We know that planning an event can be stressful, so we promise to do everything we can to make this event a success.<br></br> 
+From functions as small as a continental breakfast for 20 to a sophisticated gala for 2,000, we look forward to sharing our wonderful food 
+and excellent service with you and your guests. Every event deserves to be executed with perfection. We guarantee you will experience a most memorable event.</p>
+
+        <div class="card-deck-wrapper">
+            <div class="card-deck" >
+
+                <a href="/catering/menus" title="Find the eateries closest to you" class="filter-card small-card">
+                    <div class="image-holder"> <img src="images/Catering Menus.jpeg" alt="Catering Menus"  style="height:85%;object-fit: cover;"></div>
+                    <div class="content" style="margin-top:-55px;">
+                        <div class="text-heading" style="color: #1E5288 !important; margin-top:5px;">Catering Menus </div>
+		
+                        <div class="card-text-block" style="font-size: 15px;">Our skilled culinary team can create a customized menu for diverse palettes and can accommodate dietary restrictions for your event.</div>
+                    </div>
+                </a>
+
+
+                <a href="/catering/express"  title="Resources to support your nutrition goals" class="filter-card small-card">
+                    <div class="image-holder"><img src="images/Express Catering.jpg" alt="Express Catering" style="height:85%;object-fit: cover;"></div>
+                    <div class="content" style="margin-top:-55px;">
+                        <div class="text-heading" style="color: #1E5288 !important; margin-top:5px;">Express Catering</div>
+                        <div class="card-text-block" style="font-size: 15px;">Order quick catering from our select locations located inside the University of Arizona.</div>
+                    </div>
+                </a>
+
+</div></div>
+
+
+
+        <div class="card-deck-wrapper">
+            <div class="card-deck" >
+                <a href="/catering/beverage-options" title="Learn about your options" class="filter-card small-card">
+                    <div class="image-holder"> <img src="images/Beverage Options.jpg" alt="Beverage Options"  style="height:85%;object-fit: cover;"></div>
+                    <div class="content" style="margin-top:-55px;">
+                        <div class="text-heading" style="color: #1E5288 !important; margin-top:5px;">Beverage Options </div>
+
+                        <div class="card-text-block" style="font-size: 15px;">Select from our list of non-alcoholic or alcoholic beverages.</div>
+                    </div>
+                </a>
+                
+                <a href="/catering/catering_waiver.php"  title="Resources to support your nutrition goals" class="filter-card small-card">
+                    <div class="image-holder"> <img id="myImage" src="images/Catering Waiver Form.jpg" alt="Catering Waiver Form"  style="height:85%;object-fit: cover;"></div>
+                    <div class="content" style="margin-top:-55px;">
+                        <div class="text-heading" style="color: #1E5288 !important; margin-top:5px;">Catering Waiver Form</div>
+                        <div class="card-text-block"style="font-size: 15px;">Fill out our Catering Waiver form to request our catering services for an event.</div>
+                    </div>
+                </a>
+            </div></div>
+	    
+
+<script>
+    // Add event listener to the image
+    document.getElementById('myImage').addEventListener('click', function() {
+      // Create the iframe element
+      var iframe = document.createElement('iframe');
+      // Set the source URL of the iframe
+      iframe.src = '/catering/resources/CateringWaiver.pdf';
+      
+      // Append the iframe to the body or any desired container
+      document.body.appendChild(iframe);
+    });
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="lib/wallop/Wallop.min.js"></script>
+<script type="text/javascript">
+//	var sub_nav_open = false;
+//	var current_open_nav = '';
+
+//	$('.nav_li').on('click', function(event){
+		
+		// check status of dropdown
+//		if (sub_nav_open)
+//		{
+			// Check if different nav is clicked
+//			var selected_id = $(this).attr('id');
+//			if (selected_id == current_open_nav)
+//			{
+				// Only Close current one
+//				$('#'+current_open_nav).find('.ccr_subnav').slideUp();
+//				sub_nav_open = false;
+//				current_open_nav = '';
+//			}
+//			else
+//			{
+				// Close previous one and open current one
+//				$('#'+current_open_nav).find('.ccr_subnav').slideUp();
+//				$(this).find('.ccr_subnav').slideDown();
+//				sub_nav_open = true;
+//				current_open_nav = $(this).attr('id');
+//			}
+
+//		}
+//		else
+//		{
+			// Slide Up
+//			$(this).find('.ccr_subnav').slideDown();
+//			sub_nav_open = true;
+//			current_open_nav = $(this).attr('id');
+//		}
+
+//	});
+
+
+	// var nav_order = -1;
+	// $('body').on('click',function(event){
+	// 	var className = $(event.target).attr('class');
+	// 	if (className == 'nav_li_1' || className == 'nav_li_2' || className == 'nav_li_3')
+	// 	{
+	// 		if (!sub_nav_open)
+	// 		{
+	// 			sub_nav_open = true;
+	// 			// console.log($(event.target).parent());
+	// 			$('.'+className).find('.ccr_subnav').slideDown();
+	// 			prev_nav = className;
+	// 			// nav_order = $('.'+className).index();
+	// 		}
+	// 		else
+	// 		{
+	// 			// Check if another nav_li is chosen
+	// 			if (prev_nav != className)
+	// 			{
+	// 				$('.'+prev_nav).find('.ccr_subnav').slideUp();
+	// 				prev_nav = className;
+	// 				$('.'+prev_nav).find('.ccr_subnav').slideDown();
+	// 			}
+	// 		}
+
+	// 	}
+	// 	else if (className == 'nav_li_a')
+	// 	{
+	// 		if (!sub_nav_open)
+	// 		{
+	// 			sub_nav_open = true;
+	// 			prev_nav = $(event.target).parent().attr('class');
+	// 			$(event.target).parent().find('.ccr_subnav').slideDown();
+	// 		}
+	// 	}
+
+	// });
+
+	// $('body').on('mouseover',function(event){
+	// 	var className = $(event.target).attr('class');
+	// 	if (className == 'nav_li_no_child' || className == 'cc_right' || className == 'cc_left' || className == '')
+	// 	{
+	// 		if (sub_nav_open)
+	// 		{
+	// 			if (prev_nav != '')
+	// 			{
+	// 				sub_nav_open = false;
+	// 				$('.'+prev_nav).find('.ccr_subnav').slideUp();
+	// 				prev_nav = '';
+	// 			}
+	// 		}
+	// 	}
+	// });
+
+	//var wallopEl = document.querySelector('.Wallop');
+ 	//var slider = new Wallop(wallopEl);
+
+ 	//autoplay(3000);
+
+ 	//function autoplay(interval) {
+		//var lastTime = 0;  
+
+	//	function frame(timestamp) {
+	//		var update = timestamp - lastTime >= interval;
+
+	//		if (update) {
+	//			slider.next();
+	//			lastTime = timestamp;
+	//		}
+
+	//		requestAnimationFrame(frame);
+	//	}
+
+	//	requestAnimationFrame(frame);
+//	};
+////start leftnav buttons 
+</script>
+        
+    </div>
+</div>
+
+
+
+
+                </div>
+        </div> 
+
+
+        <section id="su_footer" style="display: unset">
+            <su-footer></su-footer>
+        </section>
+        <script type="text/javascript" src="/template/layout/footer/index_2.js"></script>
+        <link rel="stylesheet" type="text/css" href="/template/layout/footer/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com -->
+        <script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.account=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,273165,290885);</script>
+        <!-- / https://optinmonster.com -->
+    </body>
+</html>
+
