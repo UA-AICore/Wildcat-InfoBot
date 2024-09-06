@@ -157,7 +157,7 @@ Before running the project, make sure the following libraries and tools are inst
 
 ## **License**
 
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software, but you must include the original license and attribution.
+This project is licensed under the [**MIT License**](LICENSE). You are free to use, modify, and distribute this software, but you must include the original license and attribution.
 
 MIT License
 
