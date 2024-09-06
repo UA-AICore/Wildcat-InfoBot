@@ -1,5 +1,7 @@
 # Mr. Minglai Yang's project
 
+# ============================= Here I pass these tests ======================================
+'''
 from api.rag import perform_rag, create_faiss_index
 from api.embedding import get_embeddings
 import os
@@ -25,7 +27,49 @@ if __name__ == "__main__":
     
 
     # Testing
-    query = "Tell me about Arizona"
+    query = "arizona events in April"
     # RAG
     answer = perform_rag(query, documents, faiss_index)
     print("Generated answer:", answer)
+'''
+# ==========================================================================================
+
+
+
+
+# Update start from here
+
+
+from api.rag import perform_rag, create_faiss_index
+from api.embedding import get_embeddings
+from utils.file_handler import read_html_files_from_rawdata
+from utils.qna_manager import save_to_json
+
+if __name__ == "__main__":
+    # Directory containing the raw HTML data
+    rawdata_directory = "rawdata"
+    
+    # Read documents from rawdata directory
+    documents, filenames = read_html_files_from_rawdata(rawdata_directory)
+
+    # Generate embeddings for documents
+    embeddings = get_embeddings(documents)
+
+    # Create FAISS index from embeddings
+    faiss_index = create_faiss_index(embeddings)
+
+    print("Ready for Q&A session. Type your questions below:")
+    
+    while True:
+        query = input("\nEnter your question (or type 'exit' to quit): ").strip()
+        if query.lower() == "exit":
+            print("Exiting Q&A session.")
+            break
+
+        answer = perform_rag(query, documents, faiss_index)
+
+        print(f"Answer: {answer}")
+        
+        qa_entry = {"question": query, "answer": answer}
+        save_to_json(qa_entry)
+        print("Question and answer saved to qa_log.json.")
