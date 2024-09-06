@@ -1,3 +1,5 @@
-scrapy
-
+srapy
+openai
+faiss-cpu
+beautifulsoup4
 
